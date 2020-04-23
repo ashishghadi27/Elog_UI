@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Elog UI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">welcome back!</string>
+    <string name="sign_in_to_your_account_and_you_can_ship_all_your_couriers">Sign in to your account and you can ship all your couriers…</string>
+    <string name="enter_login_details">Enter Login Details</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+</resources>
