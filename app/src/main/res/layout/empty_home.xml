@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_illustration"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_rahul_pandey"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_don_t_have_any_new_user_you_can_add_them_now"
+            android:fontFamily="@font/nunito_sans_light"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_hollow"
+            android:layout_marginTop="25dp"
+            android:elevation="3dp"
+            android:padding="16dp"
+            android:id="@+id/signup">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_new_user"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/nunito_sans"
+                android:paddingHorizontal="20dp"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

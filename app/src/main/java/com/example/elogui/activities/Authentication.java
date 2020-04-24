@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 
 import com.example.elogui.R;
 import com.example.elogui.fragments.SignIn;
+import com.example.elogui.fragments.Welcome;
 
 public class Authentication extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class Authentication extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addFragment(new SignIn(), "SignIn");
+        addFragment(new Welcome(), "Welcome");
     }
 
     private void addFragment(Fragment fragment, String tag){

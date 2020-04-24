@@ -12,4 +12,55 @@
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="login">Login</string>
+    <string name="good_afternoon">good afternoon</string>
+    <string name="welcome_back">Welcome back!</string>
+
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up_to_continue">Sign up to continue!</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="your_name">Your Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="maritime_id">Maritime Id</string>
+    <string name="register">Register</string>
+    <string name="home">Home</string>
+    <string name="log">Log</string>
+    <string name="sof">SOF</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="e">E</string>
+    <string name="log1">log</string>
+    <string name="john_smith">John Smith</string>
+    <string name="john_smith_gmail_com">john.smith@gmail.com</string>
+    <string name="number_of_gangs_2">Number of Gangs : 2</string>
+    <string name="quantity_load_30kg">Quantity Load : 30KG</string>
+    <string name="_08_nov_2019">08-Nov 2019</string>
+    <string name="start_time_from">START TIME FROM:</string>
+    <string name="_09_00_am">09:00 AM</string>
+    <string name="end_time_from">END TIME FROM:</string>
+    <string name="_12_00_pm">12:00 PM</string>
+    <string name="message">Message :</string>
+    <string name="it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content">It is a long established fact that a reader will be distracted by the readable content…</string>
+    <string name="log_list">Log List</string>
+    <string name="vessel_name">VESSEL NAME</string>
+    <string name="port_name">Port Name</string>
+    <string name="owner_rahul_pandey">Owner : Rahul Pandey</string>
+    <string name="vessel_birth">Vessel Birth</string>
+    <string name="_3rd_birth">3rd Birth</string>
+    <string name="cargo">Cargo</string>
+    <string name="cargo_name">Cargo Name</string>
+    <string name="welcome_rahul_pandey">Welcome Rahul Pandey</string>
+    <string name="you_don_t_have_any_new_user_you_can_add_them_now">You don’t have any new user, you can add them now</string>
+    <string name="add_new_user">+ Add New User</string>
+    <string name="you_don_t_have_any_active_log">You don’t have any active log</string>
+    <string name="you_can_now_add_log_details">You can now add log details</string>
+    <string name="create_log">+ Create Log</string>
+    <string name="create_sof">+ Create SOF</string>
+    <string name="you_can_now_add_sof_details">You can now add SOF details</string>
+    <string name="you_don_t_have_any_sof">You don’t have any SOF</string>
+
+
 </resources>
