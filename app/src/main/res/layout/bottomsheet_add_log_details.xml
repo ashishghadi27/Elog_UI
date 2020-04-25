@@ -1,5 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_nav_back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/top_handle"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#000"
+                android:text="@string/add_new_log_details" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:hint="@string/select_date"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:lineSpacingExtra="5.3sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp">
+
+                <Space
+                    android:id="@+id/space1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corners"
+                    android:hint="@string/start_time_from_small"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:layout_toStartOf="@+id/space1"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:lineSpacingExtra="5.3sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corners"
+                    android:hint="@string/start_time_to_small"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/space1"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:lineSpacingExtra="5.3sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp">
+
+                <Space
+                    android:id="@+id/space2"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corners"
+                    android:hint="@string/end_time_from_small"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:layout_toStartOf="@+id/space2"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:lineSpacingExtra="5.3sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corners"
+                    android:hint="@string/end_time_to_small"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/space2"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:lineSpacingExtra="5.3sp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:text="@string/number_of_gangs"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:lineSpacingExtra="5.3sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:text="@string/quantity_load"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:lineSpacingExtra="5.3sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:text="@string/type_your_comments_here"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/nunito_sans"
+                android:lineSpacingExtra="5.3sp"
+                android:lines="3"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp">
+
+                <Space
+                    android:id="@+id/space3"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_hollow"
+                    android:elevation="3dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/space3"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/save_as_draft"
+                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_filled_back"
+                    android:elevation="3dp"
+                    android:padding="16dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/space3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/create_log"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

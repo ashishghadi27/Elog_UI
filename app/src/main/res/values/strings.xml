@@ -68,6 +68,21 @@
     <string name="_0">0</string>
     <string name="_30kg">30KG</string>
     <string name="_2">2</string>
+    <string name="add_new_sof">Add New SOF</string>
+    <string name="enter_vessel_name">Enter Vessel Name</string>
+    <string name="owner">Owner</string>
+    <string name="birth">Birth</string>
+    <string name="add_new_log_details">Add New Log Details</string>
+    <string name="select_date">Select Date</string>
+    <string name="start_time_from_small">Start time from</string>
+    <string name="start_time_to_small">Start time to</string>
+    <string name="end_time_from_small">End time from</string>
+    <string name="end_time_to_small">End time to</string>
+    <string name="number_of_gangs">Number of Gangs</string>
+    <string name="quantity_load">Quantity Load</string>
+    <string name="type_your_comments_here">Type your comments here... </string>
+    <string name="save_as_draft">Save as Draft</string>
+
 
 
 </resources>
