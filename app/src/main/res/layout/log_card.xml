@@ -50,13 +50,36 @@
                         android:fontFamily="@font/nunito_sans"
                         android:textColor="@color/colorPrimary"/>
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/quantity_load_30kg"
-                        android:fontFamily="@font/nunito_sans_semibold"
-                        android:textColor="#000"
-                        android:textSize="18sp"/>
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/quantity_load_30kg"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="#000"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_30kg"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="#000"
+                            android:textSize="18sp"/>
+
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -65,6 +88,18 @@
                         android:fontFamily="@font/nunito_sans_extralight"
                         android:textColor="#000"
                         android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/nunito_sans_extralight"
+                        android:textColor="#000"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
 
 
                 </LinearLayout>

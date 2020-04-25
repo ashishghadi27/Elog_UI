@@ -59,14 +59,29 @@
                         android:textColor="#000"
                         android:textSize="18sp"/>
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/owner_rahul_pandey"
-                        android:fontFamily="@font/nunito_sans_extralight"
-                        android:textColor="#000"
-                        android:textSize="16sp"/>
+                        android:orientation="horizontal">
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner_rahul_pandey"
+                            android:fontFamily="@font/nunito_sans_extralight"
+                            android:textColor="#000"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rahul Pandey"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/nunito_sans_extralight"
+                            android:textColor="#000"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

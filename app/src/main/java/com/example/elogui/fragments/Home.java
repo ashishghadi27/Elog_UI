@@ -2,58 +2,37 @@ package com.example.elogui.fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import com.example.elogui.R;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Home#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.Objects;
+
 public class Home extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private BottomSheetDialog bottom_sheet_dialog;
+    private View homeLay;
+    private ImageView add;
 
     public Home() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Home.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Home newInstance(String param1, String param2) {
-        Home fragment = new Home();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
@@ -62,4 +41,60 @@ public class Home extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        bottom_sheet_dialog = new BottomSheetDialog(Objects.requireNonNull(getContext()));
+        homeLay = view.findViewById(R.id.homeLay);
+        ImageView threeDotMenu = homeLay.findViewById(R.id.three_dot_menu);
+        add = view.findViewById(R.id.add);
+
+        threeDotMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changePinDialogue();
+            }
+        });
+
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loginSheet();
+            }
+        });
+
+    }
+
+    private void changePinDialogue(){
+        View dialog = View.inflate(getContext(), R.layout.bottomsheet_changepin, null);
+        bottom_sheet_dialog.setContentView(dialog);
+
+        RelativeLayout change = dialog.findViewById(R.id.changePin);
+
+        change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pinView();
+                bottom_sheet_dialog.dismiss();
+
+            }
+        });
+        bottom_sheet_dialog.show();
+
+    }
+
+    private void pinView(){
+        BottomSheetDialog bottom_sheet_dialog_new = new BottomSheetDialog(Objects.requireNonNull(getContext()));
+        View dialog = View.inflate(getContext(), R.layout.bottomsheet_pin_view, null);
+        bottom_sheet_dialog_new.setContentView(dialog);
+        bottom_sheet_dialog_new.show();
+    }
+
+    private void loginSheet(){
+        View dialog = View.inflate(getContext(), R.layout.bottomsheet_login, null);
+        bottom_sheet_dialog.setContentView(dialog);
+        bottom_sheet_dialog.show();
+    }
+
 }
